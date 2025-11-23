@@ -18,10 +18,30 @@ A content-based and collaborative filtering movie recommendation system built wi
 
 ## Dataset
 
-This project uses two CSV files:
+This project uses the **MovieLens 25M Dataset** from GroupLens Research.
+
+### Dataset Overview
+
+- **25,000,095** ratings across **62,423** movies
+- **162,541** users
+- **Date Range**: January 09, 1995 to November 21, 2019
+- Ratings on a 5-star scale with half-star increments
+
+### Files Used
 
 - `movies.csv` - Contains movie titles, IDs, and genres
 - `ratings.csv` - Contains user ratings for movies
+
+For complete dataset documentation, see [DATA.md](DATA.md)
+
+### Citation
+
+```
+F. Maxwell Harper and Joseph A. Konstan. 2015.
+The MovieLens Datasets: History and Context.
+ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19.
+https://doi.org/10.1145/2827872
+```
 
 ## How It Works
 
@@ -44,6 +64,12 @@ This project uses two CSV files:
 ```bash
 pip install pandas numpy scikit-learn ipywidgets
 ```
+
+## Dataset Setup
+
+1. Download the MovieLens 25M dataset from [GroupLens](http://grouplens.org/datasets/movielens/25m/)
+2. Extract `movies.csv` and `ratings.csv` to the project directory
+3. The CSV files are gitignored and will not be committed to the repository
 
 ## Usage
 
@@ -70,6 +96,7 @@ Run the widget cell in Jupyter Notebook to enable real-time search as you type.
 ├── ratings.csv             # User ratings (gitignored)
 ├── notebook.ipynb          # Main Jupyter notebook
 ├── .gitignore              # Git ignore file
+├── DATA.md                 # Dataset documentation
 └── README.md               # Project documentation
 ```
 
@@ -93,3 +120,18 @@ Run the widget cell in Jupyter Notebook to enable real-time search as you type.
 ## License
 
 This project is open source and available for educational purposes.
+
+### Dataset License
+
+The MovieLens dataset is provided by GroupLens Research. Usage must comply with their license terms:
+
+- Must cite the dataset in publications
+- Cannot redistribute without permission
+- Cannot use for commercial purposes without permission
+
+See [DATA.md](DATA.md) for complete license terms.
+
+## Acknowledgments
+
+- **GroupLens Research** at the University of Minnesota for providing the MovieLens dataset
+- **MovieLens** recommendation service (http://movielens.org)
