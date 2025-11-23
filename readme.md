@@ -32,7 +32,7 @@ This project uses the **MovieLens 25M Dataset** from GroupLens Research.
 - `movies.csv` - Contains movie titles, IDs, and genres
 - `ratings.csv` - Contains user ratings for movies
 
-For complete dataset documentation, see [DATA.md](DATA.md)
+For complete dataset documentation, see [data.md](data.md)
 
 ### Citation
 
