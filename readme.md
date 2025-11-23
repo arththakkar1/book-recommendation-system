@@ -129,7 +129,7 @@ The MovieLens dataset is provided by GroupLens Research. Usage must comply with 
 - Cannot redistribute without permission
 - Cannot use for commercial purposes without permission
 
-See [DATA.md](DATA.md) for complete license terms.
+See [data.md](data.md) for complete license terms.
 
 ## Acknowledgments
 
